@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "assets/img/sliders/slider1.jpg",
+    "title": "Handcrafted",
+    "subTitle": "Built to provide great user experience",
+    "interval": 1500
+  },
+  {
+    "id": 2,
+    "image": "assets/img/sliders/slider2.jpg",
+    "title": "LIFECYCLE",
+    "subTitle": "Experience in the lifecycle process spanning many years",
+    "interval": 500
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "clientName": "Vanessa Wilson",
+    "servcie": "Specialist Service",
+    "leadAdivsor": "Adrian Lewis",
+    "customerChartTitle": "Assets",
+    "assetAtBank": [{ "x": 1, "y": 5 }],
+    "outSideAssets": [{ "x": 4, "y": 10 }],
+    "totalDebt": [{ "x": 7, "y": 6 }],
+    "Summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  {
+    "id": 2,
+    "clientName": "Alan Cameron",
+    "servcie": "Specialist Service",
+    "leadAdivsor": "Madeleine Churchill",
+    "customerChartTitle": "Assets",
+    "assetAtBank": [{ "x": 1, "y": 5 }],
+    "outSideAssets": [{ "x": 4, "y": 10 }],
+    "totalDebt": [{ "x": 7, "y": 6 }],
+    "Summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  {
+    "id": 3,
+    "clientName": "Joanne Vaughan",
+    "servcie": "Specialist Service",
+    "leadAdivsor": "Richard Reid",
+    "customerChartTitle": "Assets",
+    "assetAtBank": [{ "x": 1, "y": 5 }],
+    "outSideAssets": [{ "x": 4, "y": 10 }],
+    "totalDebt": [{ "x": 7, "y": 6 }],
+    "Summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  }
+]
