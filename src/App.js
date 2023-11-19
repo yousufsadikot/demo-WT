@@ -1,13 +1,17 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import ClientTable from "./components/data/client-table";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Detail from "./components/details";
 
 function App() {
   return (
-    <div className="App">
-      <ClientTable />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ClientTable />} />
+        <Route path="/detail" element={<Detail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
