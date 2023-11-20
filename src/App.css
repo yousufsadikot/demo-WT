@@ -1,44 +1,76 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header.css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  8px 10px;
+  background-color: #f3f3f3;
+  color: rgb(37, 37, 37);
+}
+
+.logo-container {
+  display: flex;
+}
+.logo-container .menu-icon{
+  margin:  0 2rem;
+}
+
+.app-main-content{
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+  padding: 30px;
+}
+
+.client-content{
+  width: 100%;
+  display: flex;
+}
+.side-pannel-open {
+  width: 600px;
+  transition: width 2s;
+  padding: 10px;
+  background-color: #f2f0f0;
+  margin-left: 10px
+}
+
+.i-circle {
+  display: inline-block;
+  /* background-color: #1e00ff; */
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 33px; /* set to same size as width, height */
+  width: 30px;
+  height: 30px;
   text-align: center;
+  margin-right: 10px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.service-txt {
+  font-size: .7rem;
+  display: block;
+  font-weight: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.summery-text {
+  font-size: .9rem;
+  display: block;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.high-chart-container {
+  background: #fff;
+  border: 1px solid #8f8f8f;
+  padding: 5px;
+  margin-bottom: 15px;
 }

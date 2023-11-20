@@ -26,32 +26,38 @@ function ClientTable() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2>Client Table</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>Client</th>
-            <th>Service</th>
-            <th>Lead Advisor</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data &&
-            data.map((item) => (
-              <tr
-                key={item.id}
-                onClick={() => handleRowClick(item)}
-                style={{ cursor: "pointer" }}
-              >
-                <td>{item.clientName}</td>
-                <td>{item.servcie}</td>
-                <td>{item.leadAdivsor}</td>
+    <div className="">
+      <div className="client-content">
+        <div className="container w-100">
+          <h3>
+            <strong>Client</strong>
+          </h3>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Service</th>
+                <th>Lead Advisor</th>
               </tr>
-            ))}
-        </tbody>
-      </table>
-      {selectedItem && <SelectedItemDetails selectedItem={selectedItem} />}
+            </thead>
+            <tbody>
+              {data &&
+                data.map((item) => (
+                  <tr
+                    key={item.id}
+                    onClick={() => handleRowClick(item)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <td>{item.clientName}</td>
+                    <td>{item.servcie}</td>
+                    <td>{item.leadAdivsor}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+        {selectedItem && <SelectedItemDetails selectedItem={selectedItem} />}
+      </div>
     </div>
   );
 }

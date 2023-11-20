@@ -15,22 +15,51 @@ const SelectedItemDetails = ({ selectedItem }) => {
       // Add more data points as needed
     ],
   };
+
+  const str = selectedItem.clientName;
+  const firstLetter = str.charAt(0);
+  const bgcolor = { backgroundColor: selectedItem.bgColor };
+
   return (
-    <div className="side-panel">
-      <h3>Item Details</h3>
+    <div className="side-pannel-open">
+      <div className="d-flex justify-content-between w-100">
+        <div>
+          <h4>
+            <strong>Client Profile</strong>
+          </h4>
+        </div>
+
+        <div>
+          <Link to={`/detail/${selectedItem.id}`}>
+            <button className="btn btn-sm btn-primary">Go to Details</button>
+          </Link>
+        </div>
+      </div>
+
       {selectedItem && (
         <div>
-          <p>Client: {selectedItem.clientName}</p>
-          <p>Service: {selectedItem.clientName}</p>
+          <p className="d-flex">
+            <div className="i-circle " style={bgcolor}>
+              {firstLetter}
+            </div>
+            <div className="">
+              {selectedItem.clientName}
+              <br />
+              <span className="service-txt">
+                Service: {selectedItem.servcie}
+              </span>
+            </div>
+            <br />
+          </p>
+
+          <p></p>
           {/* Add additional item details as needed */}
         </div>
       )}
-      <HighchartsOneComponent data={chartItems.chartData} />
-      <div>{selectedItem.Summery}</div>
-
-      <Link to={`/detail/${selectedItem.id}`}>
-        <button>Go to Details</button>
-      </Link>
+      <div className="high-chart-container">
+        <HighchartsOneComponent data={chartItems.chartData} />
+      </div>
+      <div className="summery-text">{selectedItem.Summery}</div>
     </div>
   );
 };
