@@ -7,12 +7,12 @@ function Detail() {
     <div>
       <h1>Detail Page</h1>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <BwTabs />
         </div>
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
           <HighchartsTwoComponent></HighchartsTwoComponent>
-        </div>
+        </div> */}
       </div>
     </div>
   );

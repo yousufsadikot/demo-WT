@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../images/wtlogo.png";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Header() {
   const [isExpanded, setExpanded] = useState(false);
@@ -11,12 +11,13 @@ function Header() {
     <div>
       <header className={`app-header ${isExpanded ? "expanded" : ""}`}>
         <div className="logo-container">
-          <div className="menu-icon" onClick={handleToggle}>
+          {/* <div className="menu-icon" onClick={handleToggle}>
             ☰
-          </div>
+          </div> */}
           <div className="logo" onClick={handleToggle}>
-            <img src="{logo}" alt="Logo" />
-            Logo
+            <Link to="/">
+              <img src="/wealthtracker/images/wtlogo.png" alt="Logo" />
+            </Link>
           </div>
         </div>
         <div className="left-menu"></div>

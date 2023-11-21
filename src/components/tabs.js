@@ -1,5 +1,8 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import TableDesign from "./formats/table-desing";
+import NumbersInput from "./formats/number-desing";
+import ChartDesign from "./formats/chart-design";
 
 function BwTabs() {
   return (
@@ -10,14 +13,14 @@ function BwTabs() {
         className="mb-3"
         fill
       >
-        <Tab eventKey="Information" title="Client Information">
-          Tab content for Home
+        <Tab eventKey="Information" title="Table Format">
+          <TableDesign />
         </Tab>
-        <Tab eventKey="advisor" title="Advisory Team">
-          Tab content for Profile
+        <Tab eventKey="numbers" title="Play">
+          <NumbersInput />
         </Tab>
         <Tab eventKey="assets" title="Assets">
-          Tab content for Loooonger Tab
+          <ChartDesign />
         </Tab>
         <Tab eventKey="opportunity" title="Opportunity Identified">
           Tab content for Contact

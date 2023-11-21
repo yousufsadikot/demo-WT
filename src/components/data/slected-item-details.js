@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HighchartsOneComponent from "../charts/chart-one";
-import { link } from "react-router-dom";
 
 const SelectedItemDetails = ({ selectedItem }) => {
   // Example of chartData structure
